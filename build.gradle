@@ -35,6 +35,11 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix
+    implementation 'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.7.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard
+    implementation 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.4.7.RELEASE'
 }
 
 tasks.named('bootBuildImage') {
